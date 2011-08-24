@@ -19,4 +19,4 @@ Feature: Calculating the price of my shopping cart
     Given I am on my product selection page
     When I add "book" to my cart
     When I add "video" to my cart
-    Then the total price should be 5
+    Then the total price should be 15
