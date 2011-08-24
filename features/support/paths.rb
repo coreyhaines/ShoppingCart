@@ -8,6 +8,9 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
+    when /^my product selection page$/
+      shopping_cart_path(ShoppingCart.first)
+
     when /^the home\s?page$/
       '/'
 
