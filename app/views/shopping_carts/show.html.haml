@@ -1,0 +1,23 @@
+%h1 Shopping Cart
+
+%h2
+  Total Price
+  %span#total_price=@total_price
+
+
+
+%h2 Choose From These Products
+%table
+  %tr
+    %th Description
+    %th Price
+    %th Actions
+  -@available_products.each do |product|
+    %tr{:id => dom_id(product)}
+      %td=product.description
+      %td=product.price
+      %td
+        =form_for(ShoppingCartProduct.new(:shopping_cart_id => @shopping_cart.id, :product_id => product.id)) do |f|
+          =f.hidden_field :shopping_cart_id
+          =f.hidden_field :product_id
+          =f.submit "Add to cart"
