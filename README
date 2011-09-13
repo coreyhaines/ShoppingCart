@@ -4,5 +4,13 @@ The basic flow is in branches
 
 Master
 Rails-y (this is a more idiomatic rails version)
+Use this command to check out the specs
+time rspec -fd spec
+
+
 Move to model (this extracts the logic into the model, tests still slow)
+Use this command to check out the specs
+time rspec -fd spec
+
+
 No Rails (this pulls the logic out of a dependency on rails, so the tests can be run very quickly)
