@@ -4,5 +4,5 @@ The basic flow is in branches
 
 Master
 Rails-y (this is a more idiomatic rails version)
-Refactor (this extracts the logic into the model, tests still slow)
+Move to model (this extracts the logic into the model, tests still slow)
 No Rails (this pulls the logic out of a dependency on rails, so the tests can be run very quickly)
