@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20110824153440) do
   end
 
   create_table "shopping_carts", :force => true do |t|
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
